@@ -1,6 +1,24 @@
-My VSCode development configurations, settings, installed extensions, and Linux environment settings, installed packages, and variables
+# Web Development Environment Setup
+
+This repository contains a script to set up a comprehensive web development environment on a Linux-based system. The setup includes installing and configuring essential tools, databases, development languages, and more.
+
+---
+
+## Prerequisites
+
+Before running the setup script, ensure that you have:
+
+- A Linux-based system (Ubuntu/Debian recommended).
+- Git installed.
+- Access to `sudo` privileges for installing packages.
+
+---
 
 ## Restore VSCode Settings and Extensions
+
+### 1. Clone the Repository
+
+Start by cloning the repository that contains the configuration files.
 
 1. Clone the Repo
 
@@ -52,18 +70,36 @@ cp ./shell_config/bashrc.backup ~/.bashrc
 cp ./shell_config/zshrc.backup ~/.zshrc
 ```
 
-## Run the script
+## Run the setup.sh Script
+
+The setup.sh script is designed to automatically restore Linux environment, including packages, configurations, and VSCode settings. Follow these steps to execute the script:
+
+1. Make the Script Executable
+   Before running the script, ensure it is executable. In your terminal, run the following command:
+
+```bash
+chmod +x setup.sh
+```
+
+2. Execute the Setup Script
+   To restore all Linux packages, configurations, VSCode settings, extensions, keybindings, and shell configurations, run the script:
 
 ```bash
 ./setup.sh
-
 ```
 
-## Fresh install
+The script will:
 
-# Web Development Environment Setup
+Restore Linux packages from the package_list.txt file.
+Reinstall Snap packages from the snap_list.txt file.
+Restore APT repositories from sources.list.backup.
+Restore VSCode settings, keybindings, and snippets.
+Reinstall VSCode extensions listed in vscode_extensions.txt.
+Restore shell configurations from bashrc.backup and zshrc.backup.
 
-This script sets up a comprehensive web development environment on a Linux-based system, installing and configuring the following:
+## Fresh Install: Web Development Environment Setup
+
+This script sets up a comprehensive web development environment by installing and configuring the following tools:
 
 ## Tools Installed
 
@@ -82,8 +118,42 @@ This script sets up a comprehensive web development environment on a Linux-based
 4. Shell configurations are restored from `./shell_config`.
 5. .env file used for database configuration variables.
 
-## How to Use
+## How to Use the Fresh Install Script
 
-1. Clone this repository or download the script.
-2. Run `chmod +x fresh_install.sh` to make the script executable.
-3. Run the script with `./fresh_install.sh`.
+1. Clone the Repository or Download the Script
+   Clone this repository or download the setup script and configuration files:
+
+```bash
+git clone <repo_url>
+cd <repo-folder>
+```
+
+2. Make the Script Executable
+   Make the fresh_install.sh script executable:
+
+```bash
+chmod +x fresh_install.sh
+```
+
+3. Run the Script
+   Execute the script to install and configure the development environment:
+
+```bash
+./fresh_install.sh
+```
+
+## Additional Notes
+
+Ensure that the .env file is properly configured with the necessary database credentials and other environment-specific variables before running the script.
+
+1. Create a .env file on your root folder and replace these variables
+
+```bash
+MYSQL_DATABASE=
+MYSQL_USER=
+MYSQL_PASSWORD=
+POSTGRES_DATABASE=
+POSTGRES_USER=
+POSTGRES_PASSWORD=
+GITHUB_EMAIL=
+```
