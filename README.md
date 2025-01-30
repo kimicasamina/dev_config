@@ -1,7 +1,5 @@
 My VSCode development configurations, settings, installed extensions, and Linux environment settings, installed packages, and variables
 
-# Installations
-
 ## Restore VSCode Settings and Extensions
 
 1. Clone the Repo
@@ -87,5 +85,5 @@ This script sets up a comprehensive web development environment on a Linux-based
 ## How to Use
 
 1. Clone this repository or download the script.
-2. Run `chmod +x setup.sh` to make the script executable.
+2. Run `chmod +x fresh_install.sh` to make the script executable.
 3. Run the script with `./fresh_install.sh`.
