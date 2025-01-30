@@ -1,0 +1,66 @@
+{
+  "workbench.startupEditor": "none",
+  "editor.fontSize": 20,
+  "editor.fontFamily": "Dank Mono",
+  // "editor.fontFamily": "Operator Mono",
+  "editor.fontWeight": 400,
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 34,
+  "editor.cursorBlinking": "phase",
+  "editor.cursorWidth": 6,
+  "window.zoomLevel": -2,
+  "editor.find.cursorMoveOnType": true,
+  "editor.wordWrap": "on",
+  "terminal.integrated.fontFamily": "Dank Mono",
+  "synthwave84.disableGlow": false,
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "git.openRepositoryInParentFolders": "never",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorTheme": "Just Black",
+  "terminal.integrated.tabs.location": "left",
+  "terminal.integrated.cursorWidth": 4,
+
+  // SASS
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "~/../css"
+    }
+  ],
+
+  // EMMET
+  "emmet.excludeLanguages": ["markdown"],
+  "emmet.includeLanguages": {
+    "django-html": "html",
+    "jinja-html": "html",
+    "css": "css",
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // ESLINT AND PRETTIER CONFIG
+
+  "editor.formatOnSave": true,
+  "javascript.format.enable": true,
+  "prettier.eslintIntegration": true,
+  "material-icon-theme.files.color": "#fdd835",
+  "livePreview.autoRefreshPreview": "On All Changes in Editor",
+  "workbench.colorCustomizations": {},
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.iconTheme": "icons",
+  "files.exclude": {
+    "**/.git": false
+  }
+
+  // BLADE EXTENSIONS
+  // "emmet.triggerExpansionOnTab": true,
+  // "blade.format.enable": true,
+  // "workbench.colorCustomizations": {},
+  // "gitlens.ai.experimental.model": "openai:gpt-4o",
+  // "files.autoSave": "afterDelay"
+}
